@@ -4,14 +4,16 @@
   "type": "module",
   "description": "API del sistema de valuación automatizada de inmuebles Avalia",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js",
+    "start": "node --env-file=.env src/index.js",
     "seed": "node --env-file=.env src/config/seed.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
     "@supabase/supabase-js": "^2.45.0",
     "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pdfkit": "^0.15.2"
   }
 }
