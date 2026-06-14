@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-50 text-ink font-sans antialiased; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition; }
+.btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+.btn-valor { @apply btn bg-valor text-white hover:opacity-90; }
+.btn-ghost { @apply btn bg-slate-100 text-slate-600 hover:bg-slate-200; }
+.card { @apply bg-white rounded-xl border border-slate-200 p-5; }
+.input { @apply w-full rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-brand focus:ring-1 focus:ring-brand; }
+.label { @apply block text-sm font-medium text-slate-600 mb-1; }
