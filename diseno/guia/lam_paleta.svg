@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" font-family="Inter, Arial, sans-serif">
+  <rect width="1000" height="560" fill="#FFFFFF"/>
+  <text x="40" y="56" font-size="30" font-weight="700" fill="#0F172A">Paleta de colores</text>
+  <text x="40" y="84" font-size="15" fill="#64748B">El logotipo de Avalia usa esta misma paleta. El verde/ámbar/rojo codifican el nivel de confianza de cada valuación.</text>
+
+  <!-- Principales -->
+  <text x="40" y="128" font-size="16" font-weight="700" fill="#0F172A">Principales</text>
+  <g>
+    <rect x="40" y="142" width="220" height="120" rx="10" fill="#1E4D8C"/>
+    <text x="60" y="232" font-size="15" font-weight="700" fill="#FFFFFF">Azul confianza</text>
+    <text x="60" y="252" font-size="13" fill="#DCE6F4">#1E4D8C · rgb(30,77,140)</text>
+
+    <rect x="280" y="142" width="220" height="120" rx="10" fill="#2E9E6B"/>
+    <text x="300" y="232" font-size="15" font-weight="700" fill="#FFFFFF">Verde valor</text>
+    <text x="300" y="252" font-size="13" fill="#D8F0E4">#2E9E6B · rgb(46,158,107)</text>
+
+    <rect x="520" y="142" width="220" height="120" rx="10" fill="#F2A93B"/>
+    <text x="540" y="232" font-size="15" font-weight="700" fill="#5A3A00">Ámbar acento</text>
+    <text x="540" y="252" font-size="13" fill="#7A5210">#F2A93B · rgb(242,169,59)</text>
+  </g>
+
+  <!-- Neutros -->
+  <text x="40" y="312" font-size="16" font-weight="700" fill="#0F172A">Neutros</text>
+  <g font-size="12">
+    <rect x="40" y="326" width="150" height="92" rx="8" fill="#0F172A"/>
+    <text x="56" y="408" fill="#FFFFFF">Tinta #0F172A</text>
+    <rect x="206" y="326" width="150" height="92" rx="8" fill="#64748B"/>
+    <text x="222" y="408" fill="#FFFFFF">Gris #64748B</text>
+    <rect x="372" y="326" width="150" height="92" rx="8" fill="#CBD5E1"/>
+    <text x="388" y="408" fill="#0F172A">Borde #CBD5E1</text>
+    <rect x="538" y="326" width="150" height="92" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="554" y="408" fill="#0F172A">Fondo #F8FAFC</text>
+    <rect x="704" y="326" width="150" height="92" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="720" y="408" fill="#0F172A">Blanco #FFFFFF</text>
+  </g>
+
+  <!-- Semaforo de confianza -->
+  <text x="40" y="468" font-size="16" font-weight="700" fill="#0F172A">Semáforo de confianza (valuaciones)</text>
+  <g font-size="13" font-weight="700">
+    <rect x="40" y="482" width="200" height="54" rx="8" fill="#2E9E6B"/>
+    <text x="60" y="515" fill="#FFFFFF">Alta · #2E9E6B</text>
+    <rect x="256" y="482" width="200" height="54" rx="8" fill="#F2A93B"/>
+    <text x="276" y="515" fill="#5A3A00">Media · #F2A93B</text>
+    <rect x="472" y="482" width="200" height="54" rx="8" fill="#E2574C"/>
+    <text x="492" y="515" fill="#FFFFFF">Baja · #E2574C</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="none"/>
+  <g fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- silueta de casa -->
+    <path d="M120 168 L120 120 L180 78 L240 120 L240 168 Z"/>
+    <!-- puerta -->
+    <path d="M168 168 L168 138 L192 138 L192 168"/>
+    <!-- linea de tendencia ascendente (dato/mercado) -->
+    <polyline points="132 150 156 134 180 140 210 110"/>
+  </g>
+  <!-- punto de dato en el apice -->
+  <circle cx="180" cy="78" r="9" fill="#334155"/>
+  <text x="180" y="225" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#334155">avalia</text>
+  <text x="180" y="252" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" letter-spacing="3" fill="#64748B">VALUACIÓN INTELIGENTE</text>
+  <text x="180" y="288" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#94A3B8">Propuesta A · Techo + dato</text>
+</svg>

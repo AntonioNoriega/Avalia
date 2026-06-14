@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+  <rect width="1000" height="560" fill="#FFFFFF"/>
+  <text x="40" y="56" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F172A">Tipografías</text>
+  <line x1="40" y1="74" x2="960" y2="74" stroke="#E2E8F0"/>
+
+  <!-- Poppins display -->
+  <text x="40" y="112" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#1E4D8C">DISPLAY · Poppins SemiBold</text>
+  <text x="40" y="170" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="600" fill="#0F172A">Avalia valúa tu hogar</text>
+  <text x="40" y="206" font-family="Poppins, Arial, sans-serif" font-size="13" fill="#64748B">Aa Bb Cc Dd Ee · 0123456789 · Títulos H1–H3, wordmark</text>
+
+  <line x1="40" y1="232" x2="960" y2="232" stroke="#E2E8F0"/>
+
+  <!-- Inter body -->
+  <text x="40" y="270" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#1E4D8C">TEXTO / UI · Inter Regular &amp; Medium</text>
+  <text x="40" y="312" font-family="Inter, Arial, sans-serif" font-size="22" fill="#0F172A">El motor estima el valor con datos de mercado comparables.</text>
+  <text x="40" y="344" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Cuerpo de párrafo en Inter 15px / interlínea 1.6. Aa Bb Cc · 0123456789</text>
+
+  <!-- Escala tipografica -->
+  <text x="40" y="396" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#1E4D8C">ESCALA</text>
+  <g font-family="Inter, Arial, sans-serif" fill="#0F172A">
+    <text x="40"  y="430" font-size="32" font-weight="600">H1 32 / 600</text>
+    <text x="300" y="430" font-size="24" font-weight="600">H2 24 / 600</text>
+    <text x="520" y="430" font-size="18" font-weight="500">H3 18 / 500</text>
+    <text x="40"  y="470" font-size="15">Body 15 / 400</text>
+    <text x="300" y="470" font-size="13" fill="#64748B">Caption 13 / 400</text>
+    <text x="520" y="470" font-size="12" font-weight="700" fill="#64748B" letter-spacing="1">OVERLINE 12 · TRACK 1</text>
+  </g>
+  <text x="40" y="520" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748B">Alternativas web seguras: Poppins → "Segoe UI"; Inter → system-ui. Pesos en uso: 400 y 600.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <rect width="1500" height="500" fill="#0F172A"/>
+  <rect width="1500" height="500" fill="url(#g)" opacity="0"/>
+  <!-- acento geometrico: techo grande translucido -->
+  <path d="M1150 500 L1330 180 L1510 500 Z" fill="#1E4D8C" opacity="0.35"/>
+  <path d="M1260 500 L1400 250 L1540 500 Z" fill="#2E9E6B" opacity="0.25"/>
+  <g transform="translate(120,150) scale(2.1)"><path d="M16 84 L48 14" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M48 14 L80 84" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M28 52 L48 40 L68 52" fill="none" stroke="#7BE8B5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="40" y="56" width="16" height="16" rx="2" fill="#F2A93B"/></g>
+  <text x="340" y="250" font-family="Poppins, Arial, sans-serif" font-size="96" font-weight="600" fill="#FFFFFF" letter-spacing="-2">avalia</text>
+  <text x="346" y="300" font-family="Inter, Arial, sans-serif" font-size="26" letter-spacing="6" fill="#94A3B8">VALUACIÓN AUTOMATIZADA DE INMUEBLES</text>
+  <text x="346" y="345" font-family="Inter, Arial, sans-serif" font-size="22" fill="#7BE8B5">Conoce el valor de tu propiedad en segundos</text>
+</svg>

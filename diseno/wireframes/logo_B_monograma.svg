@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="none"/>
+  <g fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- letra A cuyo apice es un tejado -->
+    <path d="M138 172 L180 80 L222 172"/>
+    <!-- alero del tejado -->
+    <path d="M150 110 L180 96 L210 110"/>
+    <!-- travesaño de la A = piso -->
+    <path d="M158 150 L202 150"/>
+    <!-- ventana en el contraforma -->
+    <rect x="172" y="126" width="16" height="16" rx="2"/>
+  </g>
+  <text x="180" y="225" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#334155">avalia</text>
+  <text x="180" y="252" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" letter-spacing="3" fill="#64748B">VALUACIÓN INTELIGENTE</text>
+  <text x="180" y="288" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#94A3B8">Propuesta B · Monograma A-tejado</text>
+</svg>

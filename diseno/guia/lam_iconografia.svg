@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" font-family="Inter, Arial, sans-serif">
+  <rect width="1000" height="460" fill="#FFFFFF"/>
+  <text x="40" y="56" font-size="30" font-weight="700" fill="#0F172A">Iconografía</text>
+  <text x="40" y="84" font-size="15" fill="#64748B">Estilo lineal (outline), trazo 2px, esquinas redondeadas. Base: Heroicons. Color: tinta o azul de marca.</text>
+
+  <g fill="none" stroke="#1E4D8C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- casa -->
+    <g transform="translate(70,150)"><path d="M0 22 L24 2 L48 22"/><path d="M6 18 V44 H42 V18"/><path d="M19 44 V30 H29 V44"/></g>
+    <!-- lupa (valuar) -->
+    <g transform="translate(210,150)"><circle cx="20" cy="20" r="15"/><path d="M31 31 L46 46"/></g>
+    <!-- grafica (mercado) -->
+    <g transform="translate(350,150)"><path d="M2 46 V2"/><path d="M2 46 H46"/><path d="M10 38 L22 26 L30 32 L44 14"/></g>
+    <!-- documento PDF -->
+    <g transform="translate(490,150)"><path d="M8 2 H30 L42 14 V46 H8 Z"/><path d="M30 2 V14 H42"/><path d="M16 28 H34 M16 36 H28"/></g>
+    <!-- chat -->
+    <g transform="translate(630,150)"><path d="M2 6 a4 4 0 0 1 4 -4 H42 a4 4 0 0 1 4 4 V30 a4 4 0 0 1 -4 4 H18 L8 44 V34 H6 a4 4 0 0 1 -4 -4 Z"/></g>
+    <!-- usuario -->
+    <g transform="translate(770,150)"><circle cx="24" cy="16" r="11"/><path d="M4 46 a20 20 0 0 1 40 0"/></g>
+    <!-- ubicacion -->
+    <g transform="translate(70,300)"><path d="M24 46 C24 46 8 30 8 18 a16 16 0 0 1 32 0 C40 30 24 46 24 46 Z"/><circle cx="24" cy="18" r="6"/></g>
+    <!-- escudo (confianza) -->
+    <g transform="translate(210,300)"><path d="M24 2 L44 10 V24 C44 38 24 48 24 48 C24 48 4 38 4 24 V10 Z"/><path d="M16 24 L22 30 L34 16"/></g>
+    <!-- engranaje -->
+    <g transform="translate(350,300)"><circle cx="24" cy="24" r="13"/><circle cx="24" cy="24" r="5"/><path d="M21 2 H27 V9 H21 Z M21 39 H27 V46 H21 Z M2 21 V27 H9 V21 Z M39 21 V27 H46 V21 Z"/><path d="M9 9 L13 13 M35 35 L39 39 M39 9 L35 13 M13 35 L9 39"/></g>
+    <!-- campana (alertas) -->
+    <g transform="translate(490,300)"><path d="M10 36 V22 a14 14 0 0 1 28 0 V36 L44 42 H4 Z"/><path d="M19 42 a5 5 0 0 0 10 0"/></g>
+    <!-- llave (inmueble) -->
+    <g transform="translate(630,300)"><circle cx="13" cy="24" r="10"/><circle cx="13" cy="24" r="3"/><path d="M23 24 H46 M40 24 V32 M46 24 V30"/></g>
+    <!-- descargar -->
+    <g transform="translate(770,300)"><path d="M24 4 V32 M14 24 L24 34 L34 24"/><path d="M6 42 H42"/></g>
+  </g>
+  <g font-size="12" fill="#64748B" text-anchor="middle">
+    <text x="94" y="216">casa</text><text x="234" y="216">valuar</text><text x="374" y="216">mercado</text>
+    <text x="514" y="216">reporte</text><text x="654" y="216">chat</text><text x="794" y="216">usuario</text>
+    <text x="94" y="366">ubicación</text><text x="234" y="366">confianza</text><text x="374" y="366">ajustes</text>
+    <text x="514" y="366">alertas</text><text x="654" y="366">inmueble</text><text x="794" y="366">descargar</text>
+  </g>
+</svg>

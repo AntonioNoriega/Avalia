@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" font-family="Inter, Arial, sans-serif">
+  <rect width="1000" height="500" fill="#FFFFFF"/>
+  <text x="40" y="56" font-size="30" font-weight="700" fill="#0F172A">Componentes UI</text>
+  <line x1="40" y1="74" x2="960" y2="74" stroke="#E2E8F0"/>
+
+  <!-- Botones -->
+  <text x="40" y="110" font-size="15" font-weight="700" fill="#1E4D8C">Botones</text>
+  <rect x="40" y="124" width="150" height="44" rx="8" fill="#1E4D8C"/>
+  <text x="115" y="151" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Primario</text>
+  <rect x="206" y="124" width="150" height="44" rx="8" fill="#2E9E6B"/>
+  <text x="281" y="151" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">Acción</text>
+  <rect x="372" y="124" width="150" height="44" rx="8" fill="#FFFFFF" stroke="#1E4D8C" stroke-width="1.5"/>
+  <text x="447" y="151" text-anchor="middle" font-size="14" font-weight="600" fill="#1E4D8C">Secundario</text>
+  <rect x="538" y="124" width="150" height="44" rx="8" fill="#F1F5F9"/>
+  <text x="613" y="151" text-anchor="middle" font-size="14" font-weight="600" fill="#64748B">Fantasma</text>
+
+  <!-- Badges de confianza -->
+  <text x="40" y="216" font-size="15" font-weight="700" fill="#1E4D8C">Badges de confianza</text>
+  <rect x="40" y="230" width="120" height="34" rx="17" fill="#DCFCE7"/>
+  <circle cx="62" cy="247" r="5" fill="#2E9E6B"/>
+  <text x="76" y="252" font-size="13" font-weight="600" fill="#166534">Alta</text>
+  <rect x="176" y="230" width="120" height="34" rx="17" fill="#FEF3C7"/>
+  <circle cx="198" cy="247" r="5" fill="#F2A93B"/>
+  <text x="212" y="252" font-size="13" font-weight="600" fill="#92400E">Media</text>
+  <rect x="312" y="230" width="120" height="34" rx="17" fill="#FEE2E2"/>
+  <circle cx="334" cy="247" r="5" fill="#E2574C"/>
+  <text x="348" y="252" font-size="13" font-weight="600" fill="#991B1B">Baja</text>
+
+  <!-- Card de valuacion -->
+  <text x="40" y="312" font-size="15" font-weight="700" fill="#1E4D8C">Tarjeta de valuación</text>
+  <rect x="40" y="326" width="380" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="60" y="356" font-size="13" fill="#64748B">Departamento · Col. Centro</text>
+  <text x="60" y="392" font-size="30" font-weight="700" fill="#0F172A">$2,450,000</text>
+  <text x="60" y="416" font-size="13" fill="#64748B">Rango $2.2M – $2.6M · 7 comparables</text>
+  <rect x="60" y="432" width="96" height="28" rx="14" fill="#DCFCE7"/>
+  <circle cx="78" cy="446" r="4" fill="#2E9E6B"/>
+  <text x="90" y="450" font-size="12" font-weight="600" fill="#166534">Confianza alta</text>
+
+  <!-- Input -->
+  <text x="460" y="312" font-size="15" font-weight="700" fill="#1E4D8C">Campo de formulario</text>
+  <text x="460" y="344" font-size="13" fill="#475569">Superficie (m²)</text>
+  <rect x="460" y="354" width="300" height="44" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="476" y="381" font-size="14" fill="#94A3B8">Ej. 80</text>
+  <rect x="460" y="410" width="300" height="44" rx="8" fill="#FFFFFF" stroke="#1E4D8C" stroke-width="2"/>
+  <text x="476" y="437" font-size="14" fill="#0F172A">120</text>
+  <text x="772" y="437" font-size="12" fill="#2E9E6B">activo</text>
+</svg>

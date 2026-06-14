@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <rect width="900" height="220" fill="#F1F5F9"/>
+  <!-- ventana navegador -->
+  <rect x="30" y="30" width="840" height="160" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <!-- barra navbar -->
+  <rect x="30" y="30" width="840" height="64" rx="12" fill="#FFFFFF"/>
+  <line x1="30" y1="94" x2="870" y2="94" stroke="#E2E8F0"/>
+  <!-- logo -->
+  <g transform="translate(54,44) scale(0.42)"><path d="M16 84 L48 14" fill="none" stroke="#1E4D8C" stroke-width="11" stroke-linecap="round"/>
+    <path d="M48 14 L80 84" fill="none" stroke="#1E4D8C" stroke-width="11" stroke-linecap="round"/>
+    <path d="M28 52 L48 40 L68 52" fill="none" stroke="#2E9E6B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="40" y="56" width="16" height="16" rx="2" fill="#F2A93B"/></g>
+  <text x="96" y="72" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="600" fill="#0F172A" letter-spacing="-0.5">avalia</text>
+  <!-- nav links -->
+  <text x="430" y="69" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Inicio</text>
+  <text x="510" y="69" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Valuar</text>
+  <text x="600" y="69" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Mercado</text>
+  <!-- boton CTA -->
+  <rect x="708" y="46" width="138" height="36" rx="8" fill="#1E4D8C"/>
+  <text x="777" y="69" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Iniciar sesión</text>
+  <!-- contenido hero simulado -->
+  <rect x="60" y="120" width="300" height="16" rx="4" fill="#CBD5E1"/>
+  <rect x="60" y="148" width="220" height="12" rx="4" fill="#E2E8F0"/>
+  <rect x="700" y="120" width="140" height="44" rx="8" fill="#2E9E6B"/>
+  <text x="770" y="148" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Valuar ahora</text>
+</svg>

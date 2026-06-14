@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="180" viewBox="0 0 540 180">
+  <rect width="540" height="180" rx="16" fill="#0F172A"/>
+  <g transform="translate(24,30) scale(1.25)">
+    <path d="M16 84 L48 14" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M48 14 L80 84" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M28 52 L48 40 L68 52" fill="none" stroke="#2E9E6B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="40" y="56" width="16" height="16" rx="2" fill="#F2A93B"/>
+  </g>
+  <text x="190" y="104" font-family="Poppins, Arial, sans-serif" font-size="62" font-weight="600" fill="#FFFFFF" letter-spacing="-1">avalia</text>
+  <text x="192" y="134" font-family="Inter, Arial, sans-serif" font-size="16" letter-spacing="5" fill="#94A3B8">VALUACIÓN INTELIGENTE</text>
+</svg>

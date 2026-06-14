@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Inter, Arial, sans-serif">
+  <rect width="1000" height="430" fill="#FFFFFF"/>
+  <text x="40" y="56" font-size="30" font-weight="700" fill="#0F172A">Estilo de imágenes</text>
+  <text x="40" y="84" font-size="15" fill="#64748B">Fotografía real de inmuebles, luz natural, encuadres limpios. Overlay azul de marca para texto.</text>
+
+  <!-- ejemplo correcto: foto + overlay -->
+  <defs>
+    <linearGradient id="ov" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4D8C" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="40" y="110" width="280" height="200" rx="10" fill="#9DB4CE"/>
+    <rect x="40" y="150" width="280" height="120" fill="#7E9ABB"/>
+    <rect x="120" y="170" width="120" height="100" fill="#5E7DA3"/>
+    <rect x="40" y="110" width="280" height="200" rx="10" fill="url(#ov)"/>
+    <text x="60" y="288" font-size="16" font-weight="700" fill="#FFFFFF">Inmueble + overlay</text>
+    <circle cx="300" cy="130" r="12" fill="#2E9E6B"/><path d="M294 130 l4 4 l8 -9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- correcto: luminoso -->
+  <g>
+    <rect x="360" y="110" width="280" height="200" rx="10" fill="#CBD9E8"/>
+    <rect x="360" y="190" width="280" height="80" fill="#B5C7DC"/>
+    <circle cx="430" cy="160" r="22" fill="#F2A93B" opacity="0.7"/>
+    <circle cx="620" cy="130" r="12" fill="#2E9E6B"/><path d="M614 130 l4 4 l8 -9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="380" y="340" font-size="14" fill="#475569">Sí: natural, nítida, espacios reales</text>
+  </g>
+
+  <!-- incorrecto: saturada/oscura -->
+  <g>
+    <rect x="680" y="110" width="280" height="200" rx="10" fill="#6D28D9"/>
+    <rect x="680" y="190" width="280" height="80" fill="#DB2777"/>
+    <circle cx="760" cy="160" r="22" fill="#10B981"/>
+    <circle cx="940" cy="130" r="12" fill="#E2574C"/><path d="M935 125 l10 10 M945 125 l-10 10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="700" y="340" font-size="14" fill="#475569">No: filtros saturados, colores ajenos</text>
+  </g>
+
+  <text x="40" y="390" font-size="13" fill="#64748B">Tratamiento: relación 7:5 o 16:9, esquinas 10px, overlay tinta para texto. Evitar stock genérico de oficina.</text>
+</svg>
