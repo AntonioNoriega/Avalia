@@ -1,11 +1,11 @@
 # Etapa 1: Instalar dependencias
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 
 # Etapa 2: Imagen de ejecución reducida
-FROM node:20-alpine
+FROM node:22-alpine
 WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules
 COPY package*.json ./
