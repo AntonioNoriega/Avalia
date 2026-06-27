@@ -52,10 +52,34 @@ async function seedComparables (zonas) {
   for (const z of zonas) {
     const base = basePorZona[z.colonia] || 20000
     for (const tipo of tipos) {
+      const imagenesCasas = [
+        'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80'
+      ]
+      const imagenesDeps = [
+        'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=600&q=80',
+        'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=600&q=80'
+      ]
       for (let i = 0; i < 8; i++) {
         const construccion = rnd(60, 220)
         const variacion = 0.85 + Math.random() * 0.3 // ±15%
         const precio_m2 = Math.round(base * variacion)
+        const imgUrl = tipo === 'casa' 
+          ? imagenesCasas[i % imagenesCasas.length] 
+          : imagenesDeps[i % imagenesDeps.length]
+        
         filas.push({
           tipo, zona_id: z.id,
           superficie_m2: construccion + rnd(0, 120),
@@ -65,6 +89,7 @@ async function seedComparables (zonas) {
           estado_conserva: conservas[rnd(0, conservas.length - 1)],
           precio: precio_m2 * construccion,
           fecha_operacion: new Date(Date.now() - rnd(0, 180) * 864e5).toISOString().slice(0, 10),
+          imagen_url: imgUrl,
           origen: 'seed',
         })
       }

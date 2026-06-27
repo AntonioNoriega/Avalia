@@ -98,6 +98,7 @@ create table if not exists comparables_mercado (
   precio           numeric(14,2) not null check (precio > 0),
   precio_m2        numeric(14,2) generated always as (precio / construccion_m2) stored,
   fecha_operacion  date not null default current_date,
+  imagen_url       text,
   origen           origen_comparable not null default 'seed',
   created_at       timestamptz not null default now()
 );

@@ -100,6 +100,74 @@ export default function ValuacionDetalle () {
           </ResponsiveContainer>
         </div>
       </div>
+
+      {/* Comparables Utilizados */}
+      <div className="card">
+        <h2 className="text-lg font-semibold text-ink mb-1">Comparables de Mercado Utilizados</h2>
+        <p className="text-xs text-slate-500 mb-4">Estas son las propiedades en venta tomadas como referencia y sus factores de ajuste aplicados.</p>
+        
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {(v.comparables || []).map((c, i) => {
+            const comp = c.comparable || {}
+            return (
+              <div key={c.id} className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div className="relative h-32 bg-slate-100 overflow-hidden">
+                  <img 
+                    src={comp.imagen_url || 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80'} 
+                    alt={comp.tipo}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80';
+                    }}
+                  />
+                  <div className="absolute top-2 left-2 flex gap-1">
+                    <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded bg-brand text-white shadow">
+                      Referencia #{i + 1}
+                    </span>
+                    <span className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded bg-slate-900/60 text-white backdrop-blur-sm shadow">
+                      {comp.tipo}
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
+                  <div>
+                    <div className="flex justify-between items-baseline">
+                      <p className="text-lg font-bold text-ink">{fmtMXN(comp.precio)}</p>
+                      <p className="text-[10px] text-slate-400">{comp.construccion_m2} m² · {comp.recamaras}rec · {comp.banos}ba</p>
+                    </div>
+                    <div className="text-[10px] text-slate-500 mt-0.5 capitalize flex justify-between">
+                      <span>Conservación: {comp.estado_conserva}</span>
+                      <span>{comp.antiguedad_anios === 0 ? 'Nvo.' : `${comp.antiguedad_anios} años`}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white border border-slate-100 rounded-lg p-2.5 text-xs space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">Precio / m² orig:</span>
+                      <span className="font-medium text-slate-600">{fmtMXN(comp.precio_m2)}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">Factor de ajuste:</span>
+                      <span className="font-semibold text-amber-600">{c.factor_ajuste}x</span>
+                    </div>
+                    <div className="flex justify-between border-t border-slate-100 pt-1 font-medium">
+                      <span className="text-slate-500">Precio / m² ajustado:</span>
+                      <span className="font-bold text-brand">{fmtMXN(c.precio_m2_ajustado)}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1">
+                    <span>Peso en valuación</span>
+                    <span className="font-semibold px-2 py-0.5 bg-slate-100 rounded text-slate-600">{(c.peso * 100).toFixed(1)}%</span>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }

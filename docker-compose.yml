@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: avalia-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    environment:
+      - PORT=4000
+    expose:
+      - "4000"
+    networks:
+      - avalia-network
+
+  frontend:
+    build: ./frontend
+    container_name: avalia-frontend
+    restart: always
+    expose:
+      - "80"
+    networks:
+      - avalia-network
+    depends_on:
+      - backend
+
+  nginx:
+    image: nginx:alpine
+    container_name: avalia-nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certbot/conf:/etc/letsencrypt:rw
+      - ./certbot/www:/var/www/certbot:rw
+    networks:
+      - avalia-network
+    depends_on:
+      - frontend
+      - backend
+
+networks:
+  avalia-network:
+    driver: bridge
