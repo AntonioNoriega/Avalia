@@ -23,7 +23,7 @@
 | **Objetivo de la Prueba** | Validar el flujo funcional crítico de la aplicación: el inicio de sesión (RBAC), el renderizado visual de comparables con imágenes, el cálculo del motor de valuación (AVM) justificándolo con imágenes, y el orquestador del chatbot. |
 | **Criterios de Entrada** | 1. Servidor Backend Express corriendo en el puerto 4000.<br>2. Frontend React compilado/ejecutándose mediante Vite en desarrollo.<br>3. Conexión de red activa a Supabase y catálogo seeded con comparables y fotos asociadas. |
 | **Criterios de Salida** | 1. Ejecución del 100% de los casos de prueba diseñados.<br>2. Lograr un porcentaje mínimo de éxito del 90% (todos los casos críticos OK).<br>3. Ausencia de errores fatales (crashes de servidor o congelamiento de pantalla). |
-| **Entorno de Pruebas** | **Hardware**: Intel Core i7 / 16GB RAM / Conexión a Internet.<br>**Software**: Windows 11, Node.js v20.12.0, PostgreSQL (Supabase Cloud).<br>**Navegador**: Google Chrome v120.0 (con DevTools abiertas para monitoreo de consola). |
+| **Entorno de Pruebas** | **Hardware**: Intel Core i7 / 16GB RAM / Conexión a Internet.<br>**Software**: Windows 11, Node.js v22.x (Producción en Render), PostgreSQL (Supabase Cloud).<br>**URL de Pruebas**: `https://avalia-frontend-ibmp.onrender.com` / `https://avalia-zkug.onrender.com`<br>**Navegador**: Google Chrome v120.0 (con DevTools abiertas para monitoreo de consola). |
 | **Datos de Prueba** | 1. Credenciales de Cliente demo: `cliente@avalia.mx` / `Avalia2026`<br>2. Datos del Inmueble Objetivo: Tipo departamento, zona Costa Azul, 80 m² construcción, 2 recámaras, 2 baños, 5 años de antigüedad, estado de conservación bueno. |
 
 ---

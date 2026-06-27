@@ -30,7 +30,7 @@ Hemos diseñado Dockerfiles independientes y optimizados utilizando el principio
 ### 2.1. Dockerfile del Backend (`backend/Dockerfile`)
 [Ver Dockerfile del Backend](file:///c:/Users/anton/OneDrive/Desktop/antonio/backend/Dockerfile)
 
-*   **Optimización clave**: Se utiliza la imagen base `node:20-alpine` que pesa menos de 40MB. En la primera etapa (`builder`) se compilan e instalan los módulos de desarrollo (`npm ci`), y en la segunda etapa solo se copian los archivos necesarios para la ejecución del servidor Express, descartando las herramientas de compilación pesadas y reduciendo la superficie de ataque.
+*   **Optimización clave**: Se utiliza la imagen base `node:22-alpine` que pesa menos de 45MB. Esta versión (Node.js 22) se seleccionó para proveer soporte nativo a WebSockets, el cual es requerido por el cliente de Supabase. En la primera etapa (`builder`) se compilan e instalan los módulos de desarrollo (`npm ci`), y en la segunda etapa solo se copian los archivos necesarios para la ejecución del servidor Express, descartando las herramientas de compilación pesadas y reduciendo la superficie de ataque.
 
 ### 2.2. Dockerfile del Frontend (`frontend/Dockerfile`)
 [Ver Dockerfile del Frontend](file:///c:/Users/anton/OneDrive/Desktop/antonio/frontend/Dockerfile)
@@ -144,3 +144,42 @@ sudo crontab -e
 ```text
 0 3 1 * * docker run --rm -v "/var/www/avalia/certbot/conf:/etc/letsencrypt" -v "/var/www/avalia/certbot/www:/var/www/certbot" certbot/certbot renew && docker-compose exec -T nginx nginx -s reload
 ```
+
+---
+
+## 7. Despliegue Real en la Nube (PaaS/SaaS)
+
+Para proveer acceso público inmediato sin los costos de administración de un VPS, se implementó una infraestructura en la nube híbrida utilizando **Render** (PaaS) y **Supabase** (DBaaS).
+
+```mermaid
+graph LR
+    User[Usuario Final] -->|HTTPS| FrontendRender[Render Static Site: Frontend]
+    FrontendRender -->|REST API| BackendRender[Render Web Service: Backend]
+    BackendRender -->|PostgreSQL Protocol| SupabaseCloud[Supabase Cloud Database]
+```
+
+### 7.1. Configuración de Base de Datos en Supabase
+1. Se creó un proyecto en **Supabase** para hospedar la base de datos PostgreSQL.
+2. Se corrió el script de migración SQL (`schema.sql`) para crear las tablas, relaciones y habilitar soporte para columnas de imágenes.
+3. Se inicializaron los datos semilla (`seed.js`) mediante conexión segura para poblar los inmuebles de mercado y sus imágenes de referencia.
+
+### 7.2. Configuración del API Backend en Render (Web Service)
+*   **Origen**: Repositorio de GitHub en la rama `master`.
+*   **Runtime**: Docker (compila el `backend/Dockerfile` utilizando construcción multi-etapa con Node.js v22).
+*   **Variables de Entorno Inyectadas**:
+    *   `PORT` = `4000`
+    *   `JWT_SECRET` = `avalia_secreto_produccion_2026`
+    *   `SUPABASE_URL` = `https://vntxtzbjjkcndtywkdik.supabase.co`
+    *   `SUPABASE_SERVICE_ROLE_KEY` = `[REDACTED_SERVICE_KEY]`
+*   **Enlace de API generado**: `https://avalia-zkug.onrender.com`
+
+### 7.3. Configuración del Frontend en Render (Static Site)
+*   **Origen**: Repositorio de GitHub en la rama `master`.
+*   **Directorio Raíz**: `frontend`
+*   **Comando de Compilación**: `npm run build`
+*   **Directorio de Publicación**: `dist`
+*   **Variables de Entorno Inyectadas**:
+    *   `VITE_API_URL` = `https://avalia-zkug.onrender.com/api`
+*   **Manejo de Rutas SPA**: Se configuró el archivo `frontend/public/_redirects` con la instrucción `/* /index.html 200` para delegar el enrutamiento interno a React Router en el cliente.
+*   **Enlace de Frontend generado**: `https://avalia-frontend-ibmp.onrender.com`
+
